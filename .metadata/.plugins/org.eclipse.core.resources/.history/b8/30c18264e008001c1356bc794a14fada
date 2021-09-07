@@ -1,0 +1,12 @@
+package com.sms.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.sms.entity.Student;
+import com.sms.service.StudentService;
+
+public class StudentController {
+
+	
+
+}

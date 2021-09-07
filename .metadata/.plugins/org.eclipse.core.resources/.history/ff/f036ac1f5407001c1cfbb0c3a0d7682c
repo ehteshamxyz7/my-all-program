@@ -1,0 +1,36 @@
+package com.sms;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.sms.entity.Student;
+import com.sms.repository.StudentRepository;
+
+@SpringBootApplication
+public class StudentManagementSystemApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+		SpringApplication.run(StudentManagementSystemApplication.class, args);
+	}
+
+	@Autowired
+	private StudentRepository studentRepository;
+
+	@Override
+	public void run(String... args) throws Exception {
+
+		Student student3 = new Student(0, "Sakib", "Raza", "sakib@123gmail.com");
+		studentRepository.save(student3);
+
+		Student student4 = new Student(0, "Muzaffar", "khan", "muzaffargmail.com");
+		studentRepository.save(student4);
+
+		Student student5 = new Student(0, "mahi", "khan", "mahi@gmail.com");
+		studentRepository.save(student5);
+
+	}
+
+}

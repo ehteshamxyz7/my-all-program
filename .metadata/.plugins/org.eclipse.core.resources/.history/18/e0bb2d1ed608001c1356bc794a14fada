@@ -1,0 +1,19 @@
+package com.sms.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.sms.entity.Student;
+import com.sms.repository.StudentRepository;
+import com.sms.service.StudentService;
+
+@Service
+public class StudentServiceImpl implements StudentService {
+
+	private StudentRepository studentRepository;
+
+
+	public Student saveStudent(Student student) {
+		return studentRepository.save(student);
+	}
+
+}

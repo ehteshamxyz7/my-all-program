@@ -1,0 +1,16 @@
+package com.sms.service;
+
+import java.util.Collection;
+import java.util.List;
+
+import com.sms.entity.Student;
+
+public interface StudentService {
+
+	Student saveStudent(Student student);
+
+	List<Student> saveAll(Collection<Student> list);
+
+	List<Student> saveAll(Student student);
+
+}

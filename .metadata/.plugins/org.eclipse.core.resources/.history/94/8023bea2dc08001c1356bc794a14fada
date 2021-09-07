@@ -1,0 +1,11 @@
+package com.sms.controller;
+
+import com.sms.service.StudentService;
+
+public class StudentController {
+	private StudentService studentService;
+	
+	
+	
+
+}

@@ -1,0 +1,27 @@
+package com.sms;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.sms.entity.Student;
+import com.sms.service.StudentService;
+
+@SpringBootApplication
+public class StudentManagementSystemApplication {
+
+	public static void main(String[] args) {
+
+		
+		ApplicationContext context = SpringApplication.run(StudentManagementSystemApplication.class, args);
+		Student student = (Student) context.getBean(StudentService.class);
+		
+		student.setFristName("Ehtesham");
+		student.setLastName("khan");
+		student.setEmail("ehtesham@gmail.com");
+	
+		
+		
+	}
+
+}

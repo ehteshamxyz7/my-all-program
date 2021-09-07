@@ -1,0 +1,13 @@
+package com.sms.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.sms.service.StudentService;
+
+@Controller
+public class StudentController {
+	
+	private StudentService studentService;
+	
+
+}

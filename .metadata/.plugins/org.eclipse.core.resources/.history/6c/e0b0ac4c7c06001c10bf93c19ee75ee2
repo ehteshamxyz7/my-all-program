@@ -1,0 +1,19 @@
+package basic.java;
+
+import java.time.LocalDate;
+
+public class Date {
+
+	public static void main(String[] args) {
+
+		LocalDate id = LocalDate.now();
+		System.out.println(id.getDayOfMonth());
+		System.out.println(id.getDayOfYear());
+		System.out.println(id.getDayOfWeek());
+		System.out.println(id.getMonth());
+		System.out.println(id.getYear());
+		System.out.println(id.getMonthValue());
+
+	}
+
+}

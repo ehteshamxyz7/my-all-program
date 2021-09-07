@@ -1,0 +1,18 @@
+package com.sms;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.sms.entity.Student;
+
+@SpringBootApplication
+public class StudentManagementSystemApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(StudentManagementSystemApplication.class, args);
+	}
+
+	Student student1= new Student();
+	stude
+	
+}

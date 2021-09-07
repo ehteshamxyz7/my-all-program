@@ -1,0 +1,80 @@
+package com.sms;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.sms.entity.Student;
+import com.sms.service.StudentService;
+
+@SpringBootApplication
+public class StudentManagementSystemApplication implements CommandLineRunner {
+
+	@Autowired
+	private StudentService studentService;
+
+	public static void main(String[] args) {
+		SpringApplication.run(StudentManagementSystemApplication.class, args);
+
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		Student student1 = new Student();
+		student1.setFristName("Ehtesham");
+		student1.setLastName("Alam");
+		student1.setEmail("ehteshm@gmail.com");
+
+		Student student2 = new Student();
+		student2.setFristName("Ehtesham");
+		student2.setLastName("Alam");
+		student2.setEmail("ehteshm@gmail.com");
+
+		Student student3 = new Student();
+		student3.setFristName("Ehtesham");
+		student3.setLastName("Alam");
+		student3.setEmail("ehteshm@gmail.com");
+
+		Student student4 = new Student();
+		student4.setFristName("Ehtesham");
+		student4.setLastName("Alam");
+		student4.setEmail("ehteshm@gmail.com");
+
+		Student student5 = new Student();
+		student5.setFristName("Ehtesham");
+		student5.setLastName("Alam");
+		student5.setEmail("ehteshm@gmail.com");
+
+		Student student6 = new Student();
+		student6.setFristName("Ehtesham");
+		student6.setLastName("Alam");
+		student6.setEmail("ehteshm@gmail.com");
+
+		Student student7 = new Student();
+		student7.setFristName("Ehtesham");
+		student7.setLastName("Alam");
+		student7.setEmail("ehteshm@gmail.com");
+
+		Student student8 = new Student();
+		student8.setFristName("Ehtesham");
+		student8.setLastName("Alam");
+		student8.setEmail("ehteshm@gmail.com");
+
+		Student student9 = new Student();
+		student9.setFristName("Ehtesham");
+		student9.setLastName("Alam");
+		student9.setEmail("ehteshm@gmail.com");
+
+		List<Student> result = studentService.saveAllStudent();
+		result.forEach(e -> System.out.println(e));
+		{
+
+		}
+		;
+
+	}
+
+}
