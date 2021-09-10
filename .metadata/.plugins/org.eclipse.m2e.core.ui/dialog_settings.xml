@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\eclipse-programs"/>
 			<item value="D:\eclipse-programs\springcore"/>
 			<item value="D:\eclipse-programs\springmvcCrud"/>
 			<item value="D:\eclipse-programs\boot-rest-api"/>

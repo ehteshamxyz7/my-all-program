@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=D\:\\eclipse-programs\\helloWorld\\.git;
-GitRepositoriesView.GitDirectories.relative=helloWorld\\.git;
+GitRepositoriesView.GitDirectories=D\:\\eclipse-programs\\helloWorld\\.git;D\:\\eclipse-programs\\.git;
+GitRepositoriesView.GitDirectories.relative=helloWorld\\.git;.git;
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
