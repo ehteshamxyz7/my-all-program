@@ -1,0 +1,17 @@
+package com.multithreading;
+
+class Q {
+	int num;
+
+	public void put(int num) {
+		this.num = num;
+	}
+
+}
+
+public class InterThread {
+	public static void main(String[] args) {
+
+	}
+
+}

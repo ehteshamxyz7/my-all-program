@@ -1,0 +1,18 @@
+package com.multithreading;
+
+class Hi {
+	public void show() {
+		for (int i = 0; i <= 5; i++) {
+
+			System.out.println("Hi");
+		}
+	}
+}
+
+public class ThreadDemo {
+
+	public static void main(String[] args) {
+
+	}
+
+}
